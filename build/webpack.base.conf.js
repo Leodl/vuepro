@@ -61,7 +61,7 @@ module.exports = {
       },
        {
         test:/\.css$/,
-        loader: "style-loader!css-loader",
+        loader: "vue-style-loader",
         include: [resolve('src'),resolve('src/assets'), resolve('test'), resolve('node_modules/webpack-dev-server/client')] 
       },
        {
