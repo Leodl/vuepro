@@ -2,7 +2,9 @@
   <div class="hello">
 
     <button class="btn" @click="click()">jquery</button>
-     <input type="button" name="" value="外部资源测试" class="test">
+     <input type="button" name="" value="外部资源测试css" class="test">
+      <input type="button" name="" value="外部资源测试js" @click="test()">
+
 
      <router-link v-bind="{to:'/test'}">路由跳转</router-link>
  
@@ -29,7 +31,7 @@
 
 import "@/assets/css/test.css"
 // import "@/assets/css/test.css"
-import "@/assets/js/test.js"
+import obj from "@/assets/js/test.js"
 
    export default {
       data(){
@@ -45,7 +47,7 @@ import "@/assets/js/test.js"
         alert($(".btn").text())
       },
       test(){
-        myfun()
+        alert(obj.info)
       }
     }
   }

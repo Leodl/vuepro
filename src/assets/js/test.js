@@ -1,11 +1,9 @@
-function myfun(){
-   console.log(111)
+var obj = {
+	click:function(){
+		alert(1)
+	},
+	info:"哈哈哈哈"
 }
 
- export {  
-        myfun  
-    }
+export default obj;
 
-// $(".test").click(function(){
-// 	alert(0)
-// })
